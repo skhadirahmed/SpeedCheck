@@ -26,9 +26,11 @@
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
+                android:id="@+id/speed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="getCurrentSpeed"
                 android:text="Speed"
                 android:textSize="30sp" />
         </LinearLayout>
