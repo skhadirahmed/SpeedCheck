@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@android:color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -21,17 +22,19 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/icons8speedometer480" />
 
             <TextView
                 android:id="@+id/speed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:onClick="getCurrentSpeed"
-                android:text="Speed"
+                android:onClick="updateLocation"
+                android:text="Your Speed"
+                android:textAlignment="center"
                 android:textSize="30sp" />
         </LinearLayout>
 
@@ -45,13 +48,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/icons8speedometercolor480" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Actual Speed"
+                android:text="Speed Limit"
+                android:textAlignment="center"
                 android:textSize="30sp" />
         </LinearLayout>
 
@@ -65,13 +70,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@drawable/motion" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Decision"
+                android:text="Status"
+                android:textAlignment="center"
                 android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
