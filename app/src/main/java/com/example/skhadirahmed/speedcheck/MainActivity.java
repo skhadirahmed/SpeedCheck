@@ -22,7 +22,6 @@ import java.math.BigDecimal;
 
 public class MainActivity extends AppCompatActivity implements GPSCallback {
     private GPSManager gpsManager = null;
-    private double speed = 0.0;
     boolean isGPSEnabled = false;
     LocationManager locationManager;
     double currentSpeed, kmphSpeed;
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements GPSCallback {
 
     @Override
     public void onGPSUpdate(Location location) {
-        speed = location.getSpeed();
+        double speed = location.getSpeed();
         currentSpeed = round(speed, 3, BigDecimal.ROUND_HALF_UP);
         kmphSpeed = round((currentSpeed * 3.6), 3, BigDecimal.ROUND_HALF_UP);
         textView.setText("speed is " + kmphSpeed);

@@ -33,7 +33,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="updateLocation"
-                android:text="Your Speed"
+                android:text="@string/your_speed"
                 android:textAlignment="center"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Speed Limit"
+                android:text="@string/speed_limit"
                 android:textAlignment="center"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Status"
+                android:text="@string/status"
                 android:textAlignment="center"
                 android:textSize="30sp" />
         </LinearLayout>
